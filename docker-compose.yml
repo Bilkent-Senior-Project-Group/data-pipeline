@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  data-pipeline:
+    image: compedia2404/data-pipeline:latest
+    env_file: .env
+    environment:
+      - SQLCONNECT_TIMEOUT=60
